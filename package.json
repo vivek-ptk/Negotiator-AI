@@ -1,0 +1,26 @@
+{
+  "name": "negotiate-app",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000D\u0000E\u0000C\u0000I\u0000P\u0000H\u0000E\u0000R\u0000S\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.8.6",
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "slugify": "^1.6.6"
+  }
+}
