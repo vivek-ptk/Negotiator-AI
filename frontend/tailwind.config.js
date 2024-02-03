@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "sec-color": "#FFCF96",
-        "prim-color": "#CDFADB"
+        "sec-color": "#436850",
+        "sec-font-color": "#FFFFFF",
+        "prim-color": "#FBFADA",
+        "prim-font-color": "#000000",
+        "hover-font-color":"#ADBC9F",
       }
     },
   },
