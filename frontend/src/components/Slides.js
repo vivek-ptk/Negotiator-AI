@@ -8,10 +8,10 @@ const Slides = () => {
     };
     return (
         <div className="w-full flex">
-            <div className="w-[40%] h-screen h-96 bg-primary-pattern"></div>
-            <div className="w-[60%] h-screen h-96 bg-font-color">
+            <div className="w-[40%] h-96 bg-primary-pattern"></div>
+            <div className="w-[60%] h-96 bg-font-color">
                 <div className="mx-14 px-10 my-6">
-                    <h1 className="text-6xl font-bold mt-8 mb-3">LET US NEVER FEAR TO NEGOTIATE.</h1>
+                    <h1 className="text-6xl font-bold mt-5 mb-3">LET US NEVER FEAR TO NEGOTIATE.</h1>
                     <div className="h-[5rem]">
                         <Typewriter text="Sharpen your edge and unlock hidden value in every interaction. Our AI-empowers you to navigate negotiations with clarity.Whether you're negotiating a raise, haggling a used car - make it ethically and effortlessly." delay={60} />
                     </div>
