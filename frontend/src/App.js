@@ -5,13 +5,13 @@ import Profile from './profile/profile';
 
 function App() {
   return (
-    <>
+    <div className="bg-prim-color min-h-screen text-prim-font-color">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

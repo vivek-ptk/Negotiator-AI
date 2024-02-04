@@ -1,6 +1,6 @@
 const user = {
     id: "1234",
-    name: "John Doe",
+    name: "",
     email: "dummy@wow.com",
     products: [
         {
@@ -8,6 +8,7 @@ const user = {
             cost: 100 - 200,
             description: "This is a product",
             image: "image1",
+            time: "14:42",
             conditions: "should be handled with care"
         }
     ],

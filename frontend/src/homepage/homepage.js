@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
-// import ProductTiles from "../components/ProductTiles";
-// import productList from "../data/productList";
+import ProductTiles from "../components/ProductTiles";
+import productList from "../data/productList";
 
 import user from "../data/user";
 
@@ -21,7 +21,7 @@ function Homepage() {
     let name = localStorage.getItem("name")
     const [loggedIn, setLogin] = useState(name);
     // const [isPending, setIsPending] = useState(true);
-
+    console.log(loggedIn);
     if (!loggedIn) {
         return (
             <div className="h-screen grid place-items-center  bg-prim-color">
@@ -50,14 +50,12 @@ function Homepage() {
     } else {
         return (
             <>
-                { (
-                    <>
-                        <Navbar />
-                        <div className="flex flex-wrap justify-start m-7 gap-5 min-h-full">
-                            {/* Your other JSX elements go here */}
-                        </div>
-                    </>
-                )}
+                <Navbar />
+                <div className="flex flex-wrap justify-start m-7 gap-5 min-h-full">
+                    {productList.map((product) => {
+                        return <ProductTiles key={product.id} product={product} />
+                    })}
+                </div>
             </>
         );
     }
