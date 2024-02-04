@@ -1,13 +1,31 @@
 
+import { useEffect, useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 
-export default function ProductPreview({ product }) {
+export default function ProductPreview({ product, onClose }) {
+
+    const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+    let previewRef = useRef();
+
+    useEffect(() => {
+        document.addEventListener("mousedown", (event) => {
+            // setIsPreviewOpen(false);
+            if (previewRef.current && !previewRef.current.contains(event.target)) {
+                onClose();
+            }
+        })
+    })
+
     return (
         <>
             <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center modal-overlay bg-opacity-50 bg-gray-900">
-                <div className="w-[60vw] h-[60vh] bg-prev-prod p-5 rounded-lg relative">
+                <div className="w-[70%] h-[70%] bg-prev-prod p-5 rounded-lg relative" ref={previewRef}>
                     <div className="absolute top-2 right-2">
-                        <IoCloseSharp className="scale-150 text-red-600 hover:scale-[1.7] hover:cursor-pointer transition ease-in-out"
+                        <IoCloseSharp
+                            className="scale-150 text-red-600 hover:scale-[1.7] hover:cursor-pointer transition ease-in-out mr-1 mt-1"
+                            onClick={() => {
+                                onClose();
+                            }}
                         />
                     </div>
                     <div className="w-full flex justify-between px-5">

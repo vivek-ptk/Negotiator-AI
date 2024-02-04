@@ -21,11 +21,10 @@ function setUser(id, name, email) {
 function Homepage() {
     let name = localStorage.getItem("name")
     const [loggedIn, setLogin] = useState(name);
-    // const [isPending, setIsPending] = useState(true);
-    console.log(loggedIn);
+
     if (!loggedIn) {
         return (
-            <div className="h-screen grid place-items-center  bg-prim-color">
+            <div className="min-h-screen grid place-items-center  bg-prim-color">
                 <div className="text-5xl text-center">Welcome to<br />Negotiation-AI</div>
                 <div className="mb-[10rem]">
                     <GoogleOAuthProvider clientId="">
