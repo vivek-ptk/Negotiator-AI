@@ -1,22 +1,16 @@
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
+import Chat from "./chat/chat";
 import Homepage from "./homepage/homepage";
 import Profile from './profile/profile';
 function App() {
   return (
-    <Router>
-      <div className="bg-prim-color min-h-screen text-prim-font-color">
-        <div className="App">
-          <Switch>
-            <Route exact path="/">
-              <Homepage />
-            </Route>
-            <Route exact path="/profile">
-              <Profile />
-            </Route>
-          </Switch>
-        </div>
-      </div>
-    </Router>
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </>
   );
 }
 

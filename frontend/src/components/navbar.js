@@ -13,9 +13,11 @@ function navbar() {
             <nav className="flex justify-between my-1 mx-1 py-2 px-2 rounded-md text-xl bg-sec-color">
                 <h1 className="grid place-content-center px-5 hover:cursor-pointer text-sec-font-color">Negotiator-AI</h1>
                 <div className="w-1/6 flex justify-evenly">
-                    {name && <div className='grid place-items-center hover:text-hover-font-color px-2 rounded-md hover:cursor-pointer text-sec-font-color'>Chats</div>}
+                    <Link to="/chat" >
+                        {name && <div className='grid place-items-center hover:text-font-color px-2 rounded-md hover:cursor-pointer text-sec-font-color'>Chats</div>}
+                    </Link>
                     <Link to="/profile" >
-                        <div className='rounded-lg px-2 py-1 mr-1 hover:text-hover-font-color active:bg-prim-color hover:cursor-pointer text-sec-font-color'>
+                        <div className='rounded-lg px-2 py-1 mr-1 hover:text-font-color active:bg-prim-color hover:cursor-pointer text-sec-font-color'>
                             {nameArr[0][0]}
                             {nameArr.length > 1 && nameArr[nameArr.length - 1][0]}
                         </div>
