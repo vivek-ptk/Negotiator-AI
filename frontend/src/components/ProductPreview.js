@@ -3,9 +3,9 @@ import { IoCloseSharp } from "react-icons/io5";
 export default function ProductPreview({ product }) {
     return (
         <>
-            <div className="w-[80vw] h-[80vh] bg-tiles p-5 rounded-lg">
+            <div className="w-[80vw] h-[80vh] bg-prev-prod p-5 rounded-lg">
                 <div className="w-full flex justify-end">
-                    <IoCloseSharp className="scale-150 text-orange-300 hover:text-orange-500 hover:cursor-pointer" />
+                    <IoCloseSharp className="scale-150 text-red-600 hover:scale-[1.7] hover:cursor-pointer transition ease-in-out" />
                 </div>
                 <div className="w-full flex justify-between px-5">
                     <h1 className="text-5xl">{product.name}</h1>
@@ -18,7 +18,7 @@ export default function ProductPreview({ product }) {
                     <div className="h-[97%] w-0.5  bg-white"></div>
                     <div className="grid place-items-center">
                         <p className="h-[80%] overflow-auto mx-7 my-3">{product.description}</p>
-                        <button className="bg-prim-color text-prim-font-color p-2 rounded-lg hover:bg-amber-500 hover:text-sec-font-color">Negotiate</button>
+                        <button className="bg-prim-color text-prim-font-color p-2 rounded-lg hover:bg-[#637A9F] hover:text-sec-font-color transition ease-in">Negotiate</button>
                     </div>
                 </div>
             </div>

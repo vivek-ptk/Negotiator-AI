@@ -7,7 +7,7 @@ function ProductTiles({ product }) {
     return (
         <>
             <div
-                className="w-[22%] h-[30%] mx-2 bg-tiles rounded-lg bg-sec-color text-sec-font-color hover:scale-[1.05] hover:cursor-pointer transition ease-in-out"
+                className="w-[22%] h-[30%] mx-2 rounded-lg bg-sec-color text-sec-font-color hover:scale-[1.05] hover:cursor-pointer transition ease-in-out"
                 onClick={() => {
                     setIsPreviewOpen(true);
                 }}
