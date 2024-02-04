@@ -1,5 +1,3 @@
-import profile from "../Assests/profile.png";
-import Oprofile from "../Assests/profile1.png";
 import Input from "./input";
 
 const chat = () => {
@@ -7,32 +5,32 @@ const chat = () => {
         {
             name: 'Pikachu',
             status: "Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
         {
             name: 'Bulbasaur',
             status: "Not-Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
         {
             name: 'Squirtle',
             status: "Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
         {
             name: 'Charmender',
             status: "Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
         {
             name: 'Snorlax',
             status: "Not-Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
         {
             name: 'Alakazam',
             status: "Interested",
-            img: Oprofile,
+            img: "/profile1.png",
         },
     ]
     return ( 
@@ -40,7 +38,7 @@ const chat = () => {
             <div className='w-[25%] h-screen bg-sec-color'>
                 <div className="flex items-center my-6 mx-14">
                     <div className="border border-font-color p-[2px] rounded-full">
-                        <img src={profile} width={50} height={50} alt="profile" />
+                        <img src="/profile.png" width={50} height={50} alt="profile" />
                     </div>
                     <div className="ml-8">
                         <h3 className="text-2xl text-font-color">Deciphers</h3>
@@ -73,7 +71,7 @@ const chat = () => {
             </div>
             <div className='w-[75%] h-screen flex flex-col items-center'>
                 <div className="w-[80%] bg-font-color h-[70px] mt-10 rounded-full flex items-center px-6 py-2">
-                    <div className="cursor-pointer"><img src={profile} width={50} height={(50)} alt="profile"/></div>
+                    <div className="cursor-pointer"><img src="/profile.png" width={50} height={(50)} alt="profile"/></div>
                     <div className="ml-6 mr-auto">
                         <h3 className="text-lg">ABC</h3>
                         <p className="text-sm font-light text-gray-600">online</p>
