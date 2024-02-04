@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+// import logo from '../Assests/profile';
 import SearchBar from './SearchBar';
 
 function Navbar() {
@@ -14,6 +15,9 @@ function Navbar() {
     return (
         <>
             <nav className="flex justify-between my-1 mx-1 py-2 px-2 rounded-md text-xl bg-sec-color">
+                <div >
+                    {/* <img src={logo} width={40} alt="logo" /> */}
+                </div>
                 <h1 className="grid place-content-center px-5 hover:cursor-pointer text-sec-font-color">
                     <Link to="/">Negotiator-AI</Link>
                 </h1>

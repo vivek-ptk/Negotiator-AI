@@ -72,7 +72,7 @@ const chat = () => {
                 </div>
             </div>
             <div className='w-[75%] h-screen flex flex-col items-center'>
-                <div className="w-[80%] bg-font-color h-[70px] mt-10 rounded-full flex itnes-center px-6 py-2">
+                <div className="w-[80%] bg-font-color h-[70px] mt-10 rounded-full flex items-center px-6 py-2">
                     <div className="cursor-pointer"><img src={profile} width={50} height={(50)} alt="profile"/></div>
                     <div className="ml-6 mr-auto">
                         <h3 className="text-lg">ABC</h3>

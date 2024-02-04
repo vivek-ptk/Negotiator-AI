@@ -11,6 +11,9 @@ module.exports = {
         "prim-color": "#FBFADA",
         "prim-font-color": "#000000",
         "font-color": "#C3E2C2",
+      },
+      backgroundImage: {
+        "primary-pattern": "url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/60aec161096281.5a6c6fdfe570a.gif')"
       }
     },
   },

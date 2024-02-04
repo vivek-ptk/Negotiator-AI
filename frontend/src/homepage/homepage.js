@@ -1,5 +1,6 @@
-import Navbar from "../components/navbar";
 import ProductTiles from "../components/ProductTiles";
+import Slides from "../components/Slides";
+import Navbar from "../components/navbar";
 import productList from "../data/productList";
 
 import user from "../data/user";
@@ -51,6 +52,7 @@ function Homepage() {
         return (
             <>
                 <Navbar />
+                <Slides />
                 <div className="flex flex-wrap justify-start m-7 gap-5 min-h-full">
                     {productList.map((product) => {
                         return <ProductTiles key={product.id} product={product} />
