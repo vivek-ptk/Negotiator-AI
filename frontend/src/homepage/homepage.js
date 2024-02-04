@@ -27,7 +27,7 @@ function Homepage() {
             <div className="h-screen grid place-items-center  bg-prim-color">
                 <div className="text-5xl text-center">Welcome to<br />Negotiation-AI</div>
                 <div className="mb-[10rem]">
-                    <GoogleOAuthProvider clientId="975018674830-npkd2rsd7i0ptj3k9uhtt41t9vujtv0m.apps.googleusercontent.com">
+                    <GoogleOAuthProvider clientId="">
                         <GoogleLogin
                             onSuccess={credentialResponse => {
                                 const decoded = jwtDecode(credentialResponse.credential);
