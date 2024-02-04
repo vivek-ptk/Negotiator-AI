@@ -19,7 +19,7 @@ function ProductTiles({ product }) {
                     <div className="bg-white max-w-full mx-1 h-0.5 mb-2"></div>
                     <div className="flex justify-between mb-2">
                         <h2 className="text-lg font-medium">{product.name}</h2>
-                        <p>{product.cost}</p>
+                        <p>${product.cost}</p>
                     </div>
                     <div className="flex flex-col min-h-[3.5rem]">
                         <p className="line-clamp-2">{product.description}</p>
