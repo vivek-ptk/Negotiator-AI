@@ -20,11 +20,11 @@ function Navbar() {
                 <h1 className="grid place-content-center px-5 hover:cursor-pointer text-sec-font-color">
                     <Link to="/">Negotiator-AI</Link>
                 </h1>
-                <div className="w-[55%] flex justify-between">
+                <div className="w-[55%] flex justify-between pr-4">
                     <SearchBar />
-                    <Link to="/chat" className='grid place-items-center'>
+                    {/* <Link to="/chat" className='grid place-items-center'>
                         {nameArr.length > 0 && <div className=' hover:text-font-color px-2 rounded-md hover:cursor-pointer text-sec-font-color'>Chats</div>}
-                    </Link>
+                    </Link> */}
                     <Link to="/profile" className='grid place-items-center'>
                         <div className='rounded-lg px-2 py-1 mr-1 bg-prim-color text-prim-font-color hover:bg-amber-500 hover:cursor-pointer hover:text-sec-font-color' >
                             {nameArr.length > 0 && nameArr[0][0]}

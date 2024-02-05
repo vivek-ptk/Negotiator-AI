@@ -1,4 +1,5 @@
 import ProductTiles from "../components/ProductTiles";
+import Sell from "../components/Sell";
 import Slides from "../components/Slides";
 import Navbar from "../components/navbar";
 import productList from "../data/productList";
@@ -57,6 +58,7 @@ function Homepage() {
                         return <ProductTiles key={product.id} product={product} />
                     })}
                 </div>
+                <Sell />
             </>
         );
     }

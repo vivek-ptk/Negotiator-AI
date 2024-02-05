@@ -17,7 +17,7 @@ const SearchBar = () => {
                 type="text"
                 value={searchTerm}
                 onChange={handleSearch}
-                placeholder="Search..."
+                placeholder="Search Product..."
                 className="bg-gray-100 rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-opacity-50 w-full"
             />
             <IoSearch className="absolute right-3 top-3 text-gray-400 h-5 w-5 cursor-pointer hover:text-blue-500" />
