@@ -49,7 +49,7 @@ export default function Sell() {
     } else {
         return (
             <button
-                className="text-white border-4 border-[#008080] hover:border-white  bg-cyan-600 hover:bg-cyan-800 font-medium tracking-widest rounded-xl text-xl px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-font-color fixed right-0 bottom-0 mr-5 mb-5 w-[7rem] grid grid-flow-col place-items-center gap-2"
+                className="text-white  font-medium tracking-widest rounded-xl text-xl px-5 py-2.5 bg-green-500 hover:bg-green-600 hover:scale-[1.05] fixed right-0 bottom-0 mr-5 mb-5 w-[7rem] grid grid-flow-col place-items-center gap-2"
                 onClick={() => {
                     setButtonClicked(true)
                 }}>

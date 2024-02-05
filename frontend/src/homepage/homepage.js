@@ -50,16 +50,16 @@ function Homepage() {
         )
     } else {
         return (
-            <>
+            <div className="pb-12">
                 <Navbar />
                 <Slides />
                 <div className="flex flex-wrap justify-start m-7 gap-5 min-h-full">
                     {productList.map((product) => {
-                        return <ProductTiles key={product.id} product={product} />
+                        return <ProductTiles key={product.id} product={product} brief={false} />
                     })}
                 </div>
                 <Sell />
-            </>
+            </div>
         );
     }
 }

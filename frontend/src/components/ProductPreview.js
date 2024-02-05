@@ -2,19 +2,20 @@
 import { useEffect, useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 
-export default function ProductPreview({ product, onClose }) {
+export default function ProductPreview({ product, onClose, brief }) {
 
-    const [isPreviewOpen, setIsPreviewOpen] = useState(false);
     let previewRef = useRef();
 
     useEffect(() => {
         document.addEventListener("mousedown", (event) => {
-            // setIsPreviewOpen(false);
             if (previewRef.current && !previewRef.current.contains(event.target)) {
                 onClose();
             }
         })
     })
+
+    const descriptionHeight = brief ? '83%' : '60%'
+    const briefWidth = brief ? "w-1/2" : ""
 
     return (
         <>
@@ -32,17 +33,17 @@ export default function ProductPreview({ product, onClose }) {
                         <h1 className="text-5xl">{product.name}</h1>
                         <p className="text-2xl grid place-items-end">${product.cost}</p>
                     </div>
-                    <div className="w-full h-[90%] pt-2 flex justify-between">
-                        <div className="grid place-items-center">
+                    <div className='w-full h-[90%] pt-2 flex justify-between'>
+                        <div className={`grid place-items-center ${briefWidth}`}>
                             <img src={product.image} alt={product.name} className="object-cover w-[85%] h-[60%]" />
                         </div>
                         <div className="h-[90%] w-0.5 py-20 bg-white"></div>
-                        <div className="grid place-items-center">
-                            <p className="h-[60%] font-medium overflow-auto mx-7 my-3">{product.description}</p>
-                            <div className="grid gap-x-20 grid-cols-2">
+                        <div className={`grid place-items-center ${briefWidth}`}>
+                            <p className={`h-[${descriptionHeight}] font-medium overflow-auto mx-7 my-3`}>{product.description}</p>
+                            {!brief && <div className="grid gap-x-20 grid-cols-2">
                                 <button className="bg-prim-color text-prim-font-color p-2 rounded-lg hover:bg-[#637A9F] hover:text-sec-font-color transition ease-in">Negotiate</button>
                                 <button className="bg-prim-color text-prim-font-color p-2 rounded-lg hover:bg-[#637A9F] hover:text-sec-font-color transition ease-in">Buy Now</button>
-                            </div>
+                            </div>}
                         </div>
                     </div>
                 </div>
