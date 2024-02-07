@@ -16,7 +16,7 @@ function setUser(id, name, email) {
     user.name = name;
     user.email = email;
     user.products = [];
-    user.chats = [{}];
+    user.chats = [];
 }
 
 function Homepage() {

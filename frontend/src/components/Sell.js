@@ -49,12 +49,11 @@ export default function Sell() {
     } else {
         return (
             <button
-                className="text-white  font-medium tracking-widest rounded-xl text-xl px-5 py-2.5 bg-green-500 hover:bg-green-600 hover:scale-[1.05] fixed right-0 bottom-0 mr-5 mb-5 w-[7rem] grid grid-flow-col place-items-center gap-2"
+                className="text-white font-medium tracking-widest rounded-full text-xl p-3.5 bg-[#E78895] hover:bg-[#CE5A67] hover:scale-[1.05] fixed right-0 bottom-0 mr-5 mb-5 grid grid-flow-col place-items-center gap-2"
                 onClick={() => {
                     setButtonClicked(true)
                 }}>
                 <FaPlus />
-                Sell
             </button>
         )
     }

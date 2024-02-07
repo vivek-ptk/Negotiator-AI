@@ -36,8 +36,8 @@ function ProductTiles({ product, brief }) {
                         <p>${product.cost}</p>
                     </div>
                     {!brief && <>
-                        <div className="flex flex-col min-h-[3.5rem]">
-                            <p className="line-clamp-2">{product.description}</p>
+                        <div className="flex flex-col w-[17rem] h-[3.5rem]">
+                            <div className="overflow-hidden">{product.description}</div>
                         </div>
                     </>}
                 </div>
