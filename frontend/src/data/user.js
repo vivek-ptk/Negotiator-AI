@@ -2,6 +2,7 @@ const user = {
     id: "1234",
     name: "",
     email: "dummy@wow.com",
+    image: "",
     products: [
         {
             name: "product1",
