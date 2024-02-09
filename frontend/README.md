@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+## Deciphers
+# NEGOTIATION-ENGINE USING MACHINE LEARNING
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<center><img src="/frontend/public/Assets/logo.png" alt="logo" width="25%" /></center>
 
-## Available Scripts
+# Description
 
-In the project directory, you can run:
+The project aims to develop a negotiation engine using machine learning model that predicts the convergence or divergence of terms proposed by buyers & sellers and create a user-friendly web application to provide the easy access. It has the potential to significantly enhance the efficiency, transparency, and success of negotiations in e-commerce networks.
 
-### `npm start`
+# Problem Statement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A network of e-commerce participants & marketplaces would involve negotiation;
+Negotiations can be related to terms of trade (called Transaction contract in ONDC) or other product attributes such as price, settlement terms, etc;
+Negotiation would typically involve one party proposing their terms & conditions as above and the counterparty either accepting each term or proposing their counter-terms;
+Negotiation ends either when both parties agree to common terms & conditions or one or both of the parties decides to terminate the transaction.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Application
 
-### `npm test`
+* Improve e-commerce enviornment: Facilitate dynamic negotiations between buyers and sellers, which leads to increased sales and customer satisfaction.
+* Personalize offers based on customer needs: Suggest win-win offers tailored to individual client's preferences and budget constraints.
+* Mediate conflicts: Analyze arguments and can propose compromises based on fairness and precedent.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Machine Learning Model
 
-### `npm run build`
+Integrate a machine learning model using the large existing dataset. The model's primary task is to determine whether terms of both parties (i.e., buyer and seller) are converging or diverging.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="" alt="ML_flowchart" width="40%" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Web Application Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a web Application that allows users to easily access the products and negotiate. The application offers the following features:
+* Convergence/Divergence Prediction : Utilizes a machine learning model trained on negotiation data to predict whether the terms proposed by both parties are converging (moving closer to agreement) or diverging (moving further apart).
+* Visualization and Explainability: Presents clear visualizations of the negotiation landscape, predicted convergence/divergence scores.
+* User-Friendly Interface: Intuitive and easy-to-use interface accessible through a web browser.
 
-### `npm run eject`
+## Assumptions
+* Data Availability: The machine learning model uses a substantial dataset of past negotiations.
+* Users have sufficient negotiation skills and knowledge.
+* Ethical considerations: The use of AI in negotiations has ethical considerations regarding fairness, and transparency.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Getting started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/vivekpathakgit/Negotiator-AI.git
+cd Negotiator-AI
+cd frontend
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Technology Stack
+![MongoDB](https://img.shields.io/badge/-mongodb-333333?style=flat&logo=mongodb)
+![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
+![Node.js](https://img.shields.io/badge/-node.js-333333?style=flat&logo=node.js)
+![Tailwind](https://img.shields.io/badge/-tailwind-333333?style=flat&logo=tailwindcss)
