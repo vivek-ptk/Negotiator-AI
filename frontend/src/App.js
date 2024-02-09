@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Chat from "./chat/chat";
 import Homepage from "./homepage/homepage";
 import Profile from "./profile/profile";
+import MLBackground from "./components/MLBackground";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/ml" element={<MLBackground />}></Route>
       </Routes>
     </div>
   );

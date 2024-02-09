@@ -11,15 +11,15 @@ const Input = ({
   value = "",
   onchange = () => {},
 }) => {
-    [value, onchange] = useState("");
+  [value, onchange] = useState("");
   return (
     <div
       className={`${className}`}
       onKeyDown={(keyPressed) => {
-        if (keyPressed.key.length == 1) {
+        if (keyPressed.key.length === 1) {
           onchange(value + keyPressed.key);
         }
-        if (keyPressed.key == "Backspace" && value.length > 0) {
+        if (keyPressed.key === "Backspace" && value.length > 0) {
           onchange(value.substring(0, value.length - 1));
         }
       }}
