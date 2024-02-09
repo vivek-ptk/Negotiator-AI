@@ -1,5 +1,9 @@
-# NEGOTIATION-ENGINE USING MACHINE LEARNING
 ## Deciphers
+# NEGOTIATION-ENGINE USING MACHINE LEARNING
+
+<center><img src="/frontend/public/Assets/logo.png" alt="logo" width="25%" /></center>
+
+# Description
 
 The project aims to develop a negotiation engine using machine learning model that predicts the convergence or divergence of terms proposed by buyers & sellers and create a user-friendly web application to provide the easy access. It has the potential to significantly enhance the efficiency, transparency, and success of negotiations in e-commerce networks.
 
@@ -19,7 +23,8 @@ Negotiation ends either when both parties agree to common terms & conditions or 
 # Machine Learning Model
 
 Integrate a machine learning model using the large existing dataset. The model's primary task is to determine whether terms of both parties (i.e., buyer and seller) are converging or diverging.
-<img src="" alt="ML_flowchart" width="40%">
+
+<img src="" alt="ML_flowchart" width="40%" />
 
 # Web Application Development
 
@@ -33,7 +38,7 @@ Create a web Application that allows users to easily access the products and neg
 * Users have sufficient negotiation skills and knowledge.
 * Ethical considerations: The use of AI in negotiations has ethical considerations regarding fairness, and transparency.
 
-#Getting started
+# Getting started
 
 ```
 git clone https://github.com/vivekpathakgit/Negotiator-AI.git
