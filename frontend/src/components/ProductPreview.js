@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 import { IoCloseSharp } from "react-icons/io5";
 
 export default function ProductPreview({ product, onClose, brief }) {
